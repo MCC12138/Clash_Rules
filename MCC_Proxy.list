@@ -3,3 +3,8 @@ DOMAIN,www.fbweb.cc
 DOMAIN,fbweb02.flyingbird.la
 DOMAIN,fbweb02.flyingbird.id
 DOMAIN,web02.fbcn.pro
+
+# 配合FallBack使用
+IP-CIDR,1.1.1.1/32,no-resolve
+IP-CIDR,8.8.8.8/32,no-resolve
+IP-CIDR,9.9.9.9/32,no-resolve
