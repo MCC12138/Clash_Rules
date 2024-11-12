@@ -3,12 +3,15 @@ dns:
   ip-v6: true
 
   default-nameserver:
+    - 211.139.29.150
     - 223.6.6.6
-    - 180.184.1.1
   proxy-server-nameserver:
     - https://208.67.222.222/dns-query
     - https://223.6.6.6/dns-query
   nameserver-policy:
+    "geosite:cn,private":
+      - 211.139.29.150
+      - 223.6.6.6
     "geosite:gfw":
       - 'https://1.1.1.1/dns-query#🚀 节点选择'
       - 'https://8.8.8.8/dns-query#🚀 节点选择'
