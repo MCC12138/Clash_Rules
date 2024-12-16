@@ -3,5 +3,6 @@ DOMAIN-SUFFIX,wallhaven.cc
 DOMAIN-SUFFIX,acgfun.moe
 DOMAIN,gkdworld.linkpc.net
 
-# 根据进程匹配
+# 根据进程匹配，安卓
 PROCESS-NAME,org.telegram.messenger
+PROCESS-NAME,com.twitter.android
