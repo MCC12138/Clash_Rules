@@ -2,3 +2,6 @@ DOMAIN-SUFFIX,metacubex.one
 DOMAIN-SUFFIX,wallhaven.cc
 DOMAIN-SUFFIX,acgfun.moe
 DOMAIN,gkdworld.linkpc.net
+
+# 根据进程匹配
+PROCESS-NAME,org.telegram.messenger
