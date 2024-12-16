@@ -6,3 +6,6 @@ DOMAIN,gkdworld.linkpc.net
 # 根据包名进行匹配，安卓
 PROCESS-NAME,org.telegram.messenger
 PROCESS-NAME,com.twitter.android
+
+# 根据进程名进行匹配
+PROCESS-NAME,Telegram.exe
