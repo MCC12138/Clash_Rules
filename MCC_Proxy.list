@@ -7,6 +7,7 @@ DOMAIN,gkdworld.linkpc.net
 PROCESS-NAME,org.telegram.messenger
 PROCESS-NAME,com.twitter.android
 PROCESS-NAME,opensource.pikapika
+PROCESS-NAME,org.fdroid.fdroid
 
 # 根据进程名进行匹配
 PROCESS-NAME,Telegram.exe
