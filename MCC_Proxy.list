@@ -1,7 +1,8 @@
 DOMAIN-SUFFIX,metacubex.one
 DOMAIN-SUFFIX,wallhaven.cc
 DOMAIN-SUFFIX,acgfun.moe
-DOMAIN,gkdworld.linkpc.net
+DOMAIN-KEYWORD,gkdworld
+DOMAIN-SUFFIX,nicesss.com
 
 # 根据包名进行匹配，安卓
 PROCESS-NAME,org.telegram.messenger
