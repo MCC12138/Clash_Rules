@@ -5,3 +5,6 @@ DOMAIN-SUFFIX,tailscale.com
 
 DOMAIN-SUFFIX,okx.com
 DOMAIN-SUFFIX,binance.com
+
+# 根据进程名进行匹配
+PROCESS-NAME,tailscaled.exe
