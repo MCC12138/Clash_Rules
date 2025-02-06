@@ -3,8 +3,9 @@ DOMAIN-SUFFIX,wallhaven.cc
 DOMAIN-SUFFIX,acgfun.moe
 DOMAIN-KEYWORD,gkdworld
 DOMAIN-SUFFIX,nicesss.com
-# 油猴插件网站 Sleazy Fork
+# 油猴插件网站
 DOMAIN-SUFFIX,sleazyfork.org
+DOMAIN-SUFFIX,greasyfork.org
 
 # 根据包名进行匹配，安卓
 PROCESS-NAME,org.telegram.messenger
