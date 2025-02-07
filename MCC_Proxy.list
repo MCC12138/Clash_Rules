@@ -11,6 +11,7 @@ DOMAIN-SUFFIX,greasyfork.org
 PROCESS-NAME,org.telegram.messenger
 PROCESS-NAME,com.twitter.android
 PROCESS-NAME,org.fdroid.fdroid
+PROCESS-NAME,com.openai.chatgpt
 
 # 根据进程名进行匹配
 PROCESS-NAME,Telegram.exe
