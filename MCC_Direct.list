@@ -2,6 +2,3 @@ DOMAIN,tlu.dl.delivery.mp.microsoft.com
 
 DOMAIN-SUFFIX,tailscale.io
 DOMAIN-SUFFIX,tailscale.com
-
-# 根据进程名进行匹配
-PROCESS-NAME,tailscaled.exe
