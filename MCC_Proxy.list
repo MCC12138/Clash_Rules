@@ -8,12 +8,3 @@ DOMAIN-SUFFIX,sleazyfork.org
 DOMAIN-SUFFIX,greasyfork.org
 # onlyfan资源网站
 DOMAIN-SUFFIX,coomer.su
-
-# 根据包名进行匹配，安卓
-PROCESS-NAME,org.telegram.messenger
-PROCESS-NAME,com.twitter.android
-PROCESS-NAME,org.fdroid.fdroid
-PROCESS-NAME,com.openai.chatgpt
-
-# 根据进程名进行匹配
-PROCESS-NAME,Telegram.exe
