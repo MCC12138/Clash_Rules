@@ -4,7 +4,7 @@ proxy-providers:
     type: http
     ## 机场订阅链接，使用 Clash 链接
     url: "https://fba01.fbsubcn01.cc:2096/flydsubal/0q3kspfw2uszkzh4?clash=1&extend=1"
-    path: ./proxies/airport_flybird.yaml
+    path: ./proxies/airport_flybird1.yaml
     # 机场订阅更新周期(分钟)
     interval: 86400
     health-check:
