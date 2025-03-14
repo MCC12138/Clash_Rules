@@ -28,7 +28,7 @@ dns:
   - 180.184.1.1
   proxy-server-nameserver:
   - https://223.6.6.6/dns-query
-  - https://1.12.12.12/dns-query
+  - https://doh.pub/dns-query
   nameserver-policy:
     "rule-set:MCC_Proxy,MCC_Proxy_AndroidProcess,MCC_Proxy_WindowsProcess,ai,tld-proxy,proxy":
     - https://1.1.1.1/dns-query#🚀 节点选择
