@@ -34,8 +34,7 @@ dns:
     - https://1.1.1.1/dns-query#🚀 节点选择
     - https://8.8.8.8/dns-query#🚀 节点选择
   nameserver:
-  - 61.166.150.123
-  - 211.139.29.150
+  - system
   - 223.6.6.6
   fallback: null
   enhanced-mode: fake-ip
