@@ -2,4 +2,4 @@
 PROCESS-NAME,org.telegram.messenger
 PROCESS-NAME,com.twitter.android
 PROCESS-NAME,org.fdroid.fdroid
-PROCESS-NAME,com.openai.chatgpt
+# PROCESS-NAME,com.openai.chatgpt
