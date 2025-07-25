@@ -3,4 +3,4 @@ PROCESS-NAME,org.telegram.messenger
 PROCESS-NAME,com.twitter.android
 PROCESS-NAME,org.fdroid.fdroid
 # PROCESS-NAME,com.openai.chatgpt
-PROCESS-NAME,com.neowizgames.game.browndust2
+PROCESS-NAME,com.tradingview.tradingviewapp
