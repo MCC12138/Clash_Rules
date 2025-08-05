@@ -13,7 +13,7 @@ dns:
   fake-ip-filter-mode: blacklist
   fake-ip-range: 172.16.0.1/16
   fake-ip-filter:
-    - rule-set:fakeip-filter,MCC_Direct,microsoft-cn,apple-cn,GoogleFCM,SteamCN,cn
+    - rule-set:fakeip-filter,MCC_Direct,microsoft-cn,apple-cn,SteamCN,cn
   default-nameserver:
     - tls://223.5.5.5
     - tls://223.6.6.6
@@ -23,10 +23,12 @@ dns:
   nameserver-policy:
     "rule-set:MCC_Direct,microsoft-cn,apple-cn,SteamCN,cn":
       - system
-      - 223.6.6.6
+    "rule-set:MCC_Proxy,ai,tld-proxy,proxy":
+      - https://dns.google/dns-query#🚀 节点选择
+      - https://dns.cloudflare.com/dns-query#🚀 节点选择
   nameserver:
-    - https://dns.google/dns-query#🚀 节点选择&ecs=39.128.18.12/24
-    - https://dns11.quad9.net/dns-query#🚀 节点选择&ecs=39.128.18.12/24
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
 
 # ## 防泄漏 国外DNS兜底
 dns:
@@ -64,3 +66,4 @@ dns:
   nameserver:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
+
