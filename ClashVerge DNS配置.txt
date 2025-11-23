@@ -25,7 +25,7 @@ dns:
       - system
     "rule-set:MCC_Proxy,ai,tld-proxy,proxy":
       - https://dns.google/dns-query#🚀 节点选择
-      - https://dns.cloudflare.com/dns-query#🚀 节点选择
+      - https://dns11.quad9.net/dns-query#🚀 节点选择
   nameserver:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
@@ -52,7 +52,7 @@ dns:
     - https://120.53.53.53/dns-query
   nameserver:
     - https://dns.google/dns-query#🚀 节点选择&ecs=39.128.18.0/24
-    - https://dns.cloudflare.com/dns-query#🚀 节点选择&ecs=39.128.18.0/24
+    - https://dns11.quad9.net/dns-query#🚀 节点选择&ecs=39.128.18.0/24
 
 # ## 精简
 dns:
@@ -68,6 +68,7 @@ dns:
   nameserver:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
+
 
 
 
