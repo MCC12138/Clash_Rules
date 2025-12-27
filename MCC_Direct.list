@@ -1,2 +1,4 @@
 DOMAIN-SUFFIX,tailscale.io
 DOMAIN-SUFFIX,tailscale.com
+# ipv6 test
+DOMAIN-SUFFIX,test-ipv6.com
