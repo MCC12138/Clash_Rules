@@ -1,0 +1,58 @@
+log-level: error
+unified-delay: true
+tcp-concurrent: true
+global-client-fingerprint: chrome
+profile: {store-selected: true}
+
+sniffer:
+  enable: true
+  sniff: {HTTP: {ports: [80, 8080-8880], override-destination: true}, TLS: {ports: [443, 8443]}, QUIC: {ports: [443, 8443]}}
+  skip-domain:
+    - "Mijia Cloud"
+    - "+.push.apple.com"
+
+hosts:
+  dns.google: [8.8.8.8, 8.8.4.4, 2001:4860:4860::8888, 2001:4860:4860::8844]
+  dns11.quad9.net: [9.9.9.11, 149.112.112.11, 2620:fe::11, 2620:fe::fe:11]
+  services.googleapis.cn: [services.googleapis.com]
+
+## redir-host模式
+dns:
+  enable: true
+  ipv6: true
+  listen: :1053
+  use-hosts: true
+  enhanced-mode: redir-host
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  proxy-server-nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  nameserver-policy:
+    "rule-set:MCC_Proxy,ai,tld-proxy,proxy":
+      - https://dns.google/dns-query#🚀 节点选择&ecs=39.128.18.0/24
+      - https://dns11.quad9.net/dns-query#🚀 节点选择&ecs=39.128.18.0/24
+  nameserver:
+    - 192.168.6.1:53
+
+## fake-ip模式
+dns:
+  enable: true
+  ipv6: true
+  listen: :1053
+  use-hosts: true
+  enhanced-mode: fake-ip
+  fake-ip-filter-mode: blacklist
+  fake-ip-range: 172.16.0.1/16
+  fake-ip-range6: fc00::/18
+  fake-ip-filter:
+    - rule-set:fakeip-filter,MCC_Direct,google-cn,microsoft-cn,apple-cn,SteamCN,cn
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  proxy-server-nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  nameserver:
+    - 192.168.6.1:53
