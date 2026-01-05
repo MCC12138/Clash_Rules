@@ -45,7 +45,7 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-filter-mode: blacklist
   fake-ip-range: 172.16.0.1/16
-  fake-ip-range6: fc00::/18
+  fake-ip-range6: fc00::/16
   fake-ip-filter:
     - rule-set:fakeip-filter,MCC_Direct,google-cn,microsoft-cn,apple-cn,SteamCN,cn
   default-nameserver:
