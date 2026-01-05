@@ -31,8 +31,8 @@ dns:
     - https://doh.pub/dns-query
   nameserver-policy:
     "rule-set:MCC_Proxy,ai,tld-proxy,proxy":
-      - https://dns.google/dns-query#🚀 节点选择&ecs=39.128.18.0/24
-      - https://dns11.quad9.net/dns-query#🚀 节点选择&ecs=39.128.18.0/24
+      - https://dns.google/dns-query#🚀 节点选择
+      - https://dns11.quad9.net/dns-query#🚀 节点选择
   nameserver:
     - 192.168.6.1:53
 
