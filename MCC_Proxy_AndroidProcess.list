@@ -1,6 +1,6 @@
 # 根据包名进行匹配，安卓
 PROCESS-NAME,org.telegram.messenger
-# PROCESS-NAME,com.twitter.android
+PROCESS-NAME,com.twitter.android
 PROCESS-NAME,org.fdroid.fdroid
 # PROCESS-NAME,com.openai.chatgpt
 # PROCESS-NAME,com.tradingview.tradingviewapp
