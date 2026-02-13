@@ -40,14 +40,47 @@ dns:
 dns:
   enable: true
   ipv6: true
-  listen: :1053
+  listen: 0.0.0.0:1053
   use-hosts: true
   enhanced-mode: fake-ip
   fake-ip-filter-mode: blacklist
   fake-ip-range: 28.0.0.0/8
   fake-ip-range6: fc00::/16
   fake-ip-filter:
-    - rule-set:fakeip-filter,MCC_Direct,google-cn,microsoft-cn,apple-cn,SteamCN,games-cn,cn
+    - rule-set:fakeip-filter,MCC_Direct,google-cn,microsoft-cn,apple-cn,games-cn,cn
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  proxy-server-nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  nameserver:
+    - 192.168.6.1:53
+
+## fake-ip rule 模式 
+dns:
+  enable: true
+  ipv6: true
+  listen: 0.0.0.0:1053
+  enhanced-mode: fake-ip
+  fake-ip-range: 28.0.0.0/8
+  fake-ip-range6: fc00::/16
+  fake-ip-filter-mode: rule
+  fake-ip-filter:
+    - RULE-SET,fakeip-filter,real-ip
+    - RULE-SET,MCC_Direct,real-ip
+    - RULE-SET,google-cn,real-ip
+    - RULE-SET,microsoft-cn,real-ip
+    - RULE-SET,apple-cn,real-ip
+    - RULE-SET,games-cn,real-ip
+    - RULE-SET,cn,real-ip
+    
+    - RULE-SET,ai,fake-ip
+    - RULE-SET,MCC_Proxy,fake-ip
+    - RULE-SET,proxy,fake-ip
+    - RULE-SET,tld-proxy,fake-ip
+    
+    - MATCH,real-ip
   default-nameserver:
     - 223.5.5.5
     - 119.29.29.29
