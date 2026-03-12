@@ -4,3 +4,4 @@ PROCESS-NAME,com.twitter.android
 PROCESS-NAME,org.fdroid.fdroid
 # PROCESS-NAME,com.openai.chatgpt
 # PROCESS-NAME,com.tradingview.tradingviewapp
+PROCESS-NAME,com.google.android.googlequicksearchbox
