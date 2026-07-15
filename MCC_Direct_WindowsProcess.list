@@ -1,4 +1,4 @@
 # 根据进程名进行匹配 Windows
-PROCESS-NAME,tailscaled.exe
-PROCESS-NAME,tailscale.exe
-PROCESS-NAME,LxMainNew.exe
+# PROCESS-NAME,tailscaled.exe
+# PROCESS-NAME,tailscale.exe
+# PROCESS-NAME,LxMainNew.exe
